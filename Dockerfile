@@ -22,7 +22,7 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 
 # COPY tệp .war đã tạo ở Giai đoạn 1 vào thư mục webapps của Tomcat
 # Đổi tên thành ROOT.war để ứng dụng chạy ở đường dẫn gốc (/)
-COPY --from=builder /app/target/BT2Web-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
+COPY --from=builder /app/target/bthosting-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 
 # Mở cổng mặc định của Tomcat
 EXPOSE 8080
